@@ -1,0 +1,160 @@
+/* Modern Chat App Styling */
+
+:root {
+  --primary-color: #4361ee;
+  --primary-light: #4895ef;
+  --primary-dark: #3f37c9;
+  --accent-color: #f72585;
+  --text-color: #2b2d42;
+  --text-light: #6c757d;
+  --bg-light: #f8f9fa;
+  --white: #ffffff;
+  --shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+}
+
+/* Card Styling */
+.card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: none;
+}
+
+.card-header.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-footer {
+  background-color: var(--bg-light);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+  box-shadow: var(--shadow) !important;
+}
+
+/* Message Box Styling */
+.message-box {
+  display: block;
+  height: 25vw;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.message-box h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+}
+
+.list-group {
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual Message Styling */
+.list-group li {
+  margin-bottom: 0.75rem;
+  border-radius: var(--radius);
+  padding: 0.75rem !important;
+}
+
+li[style*="right"] {
+  background-color: var(--primary-light);
+  color: var(--white);
+  margin-left: 20%;
+  border-radius: 15px 15px 0 15px;
+}
+
+li[style*="left"] {
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  margin-right: 20%;
+  border-radius: 15px 15px 15px 0;
+  border: 1px solid #e9e9e9;
+}
+
+/* Input Form Styling */
+.fom {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.fom input[type="text"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  border: 2px solid #e9e9e9;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+.fom input[type="text"]:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+}
+
+.fom button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.fom button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.fom button i {
+  font-size: 0.875rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .fom {
+    flex-direction: column;
+  }
+
+  .fom button {
+    width: 100%;
+  }
+
+  li[style*="right"], li[style*="left"] {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.list-group li {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+

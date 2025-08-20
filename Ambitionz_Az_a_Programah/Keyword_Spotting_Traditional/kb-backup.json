@@ -1,0 +1,242 @@
+{
+  "zeus": {
+    "keywords": ["zeus", "king of gods", "olympus", "thunder", "lightning", "jupiter"],
+    "response": "Zeus, the mighty king of the Olympian gods, wields thunder and lightning. He rules from Mount Olympus, father of many gods and heroes. His eagle and oak tree are sacred symbols."
+  },
+  "hera": {
+    "keywords": ["hera", "queen", "marriage", "juno", "wife of zeus", "goddess of marriage"],
+    "response": "Hera, queen of Olympus and goddess of marriage, is Zeus's wife and sister. She's known for her jealousy and vengeful nature, especially against Zeus's lovers and their children."
+  },
+  "poseidon": {
+    "keywords": ["poseidon", "sea", "ocean", "earthquakes", "horses", "trident", "neptune"],
+    "response": "Poseidon, god of the sea, earthquakes, and horses, wields a mighty trident. He created horses and is often depicted riding a chariot across the waves."
+  },
+  "athena": {
+    "keywords": ["athena", "wisdom", "war", "olive tree", "owl", "minerva", "goddess of wisdom"],
+    "response": "Athena, goddess of wisdom, warfare, and crafts, sprang fully armed from Zeus's head. The owl and olive tree are sacred to her. She's the patron of Athens."
+  },
+  "apollo": {
+    "keywords": ["apollo", "sun", "music", "archery", "prophecy", "medicine", "lyre"],
+    "response": "Apollo, god of the sun, music, poetry, and prophecy, drives the sun chariot across the sky. He's also the god of medicine and archery, carrying a golden lyre."
+  },
+  "artemis": {
+    "keywords": ["artemis", "hunt", "moon", "virgin", "archery", "wild animals", "diana"],
+    "response": "Artemis, goddess of the hunt, wilderness, and the moon, is Apollo's twin sister. She's a skilled archer who protects young women and wild animals."
+  },
+  "hermes": {
+    "keywords": ["hermes", "messenger", "travel", "commerce", "thieves", "caduceus", "mercury"],
+    "response": "Hermes, the swift messenger god, wears winged sandals and carries a caduceus. He guides souls to the underworld and is the patron of travelers and merchants."
+  },
+  "aphrodite": {
+    "keywords": ["aphrodite", "love", "beauty", "venus", "goddess of love", "dove"],
+    "response": "Aphrodite, goddess of love and beauty, was born from sea foam. She's often accompanied by doves and roses, and her magic girdle makes anyone fall in love."
+  },
+  "ares": {
+    "keywords": ["ares", "war", "violence", "mars", "god of war", "battle"],
+    "response": "Ares, the fierce god of war and violence, revels in battle and bloodshed. Unlike Athena's strategic warfare, Ares represents the brutal chaos of combat."
+  },
+  "hephaestus": {
+    "keywords": ["hephaestus", "fire", "blacksmith", "volcano", "vulcan", "forge"],
+    "response": "Hephaestus, the lame god of fire and blacksmithing, creates magnificent weapons and armor in his volcanic forge. He's married to Aphrodite but often cuckolded."
+  },
+  "demeter": {
+    "keywords": ["demeter", "harvest", "agriculture", "grain", "ceres", "mother earth"],
+    "response": "Demeter, goddess of agriculture and harvest, controls the seasons. When her daughter Persephone was abducted, she caused winter by neglecting the earth."
+  },
+  "dionysus": {
+    "keywords": ["dionysus", "wine", "festival", "madness", "bacchus", "grapevine"],
+    "response": "Dionysus, god of wine, revelry, and ecstasy, brings joy and madness. His followers, the Maenads, dance wildly in the forests during his festivals."
+  },
+  "hades": {
+    "keywords": ["hades", "underworld", "death", "pluto", "king of dead", "cerberus"],
+    "response": "Hades, god of the underworld and the dead, rules the realm of shadows. His three-headed dog Cerberus guards the entrance, preventing souls from escaping."
+  },
+  "persephone": {
+    "keywords": ["persephone", "spring", "underworld", "queen of dead", "pomegranate", "proserpina"],
+    "response": "Persephone, queen of the underworld, spends part of the year with Hades and part with her mother Demeter, explaining the changing seasons."
+  },
+  "hercules": {
+    "keywords": ["hercules", "heracles", "twelve labors", "strength", "hero", "lion skin"],
+    "response": "Hercules, the greatest Greek hero, performed twelve impossible labors to atone for killing his family. His strength and lion skin cloak are legendary."
+  },
+  "achilles": {
+    "keywords": ["achilles", "trojan war", "heel", "invulnerable", "patroclus", "myrmidons"],
+    "response": "Achilles, the greatest warrior of the Trojan War, was invulnerable except for his heel. His rage over Patroclus's death turned the tide of battle."
+  },
+  "odysseus": {
+    "keywords": ["odysseus", "ulysses", "trojan horse", "odyssey", "ithaca", "penelope"],
+    "response": "Odysseus, the clever king of Ithaca, devised the Trojan Horse and endured a ten-year journey home, facing monsters and gods on his epic odyssey."
+  },
+  "medusa": {
+    "keywords": ["medusa", "gorgon", "snake hair", "stone", "perseus", "mirror"],
+    "response": "Medusa, the most famous Gorgon, had snakes for hair and turned men to stone with her gaze. Perseus killed her using a mirrored shield."
+  },
+  "minotaur": {
+    "keywords": ["minotaur", "labyrinth", "theseus", "bull", "human", "crete"],
+    "response": "The Minotaur, half-man half-bull, lived in King Minos's labyrinth on Crete. Theseus killed it with Ariadne's help and a ball of thread."
+  },
+  "centaur": {
+    "keywords": ["centaur", "half horse", "half human", "chiron", "archery", "wild"],
+    "response": "Centaurs are half-human, half-horse creatures. Chiron, the wisest centaur, taught heroes like Achilles and Jason medicine and archery."
+  },
+  "siren": {
+    "keywords": ["siren", "song", "shipwreck", "sea", "odysseus", "wax"],
+    "response": "Sirens, beautiful sea creatures with enchanting voices, lured sailors to their deaths on rocky shores. Odysseus escaped by having his crew tie him to the mast."
+  },
+  "cyclops": {
+    "keywords": ["cyclops", "one eye", "giant", "polyphemus", "odysseus", "sheep"],
+    "response": "Cyclopes are one-eyed giants. Polyphemus, the most famous, was blinded by Odysseus and his men, who escaped by hiding under his sheep."
+  },
+  "hydra": {
+    "keywords": ["hydra", "nine heads", "hercules", "regenerate", "lake", "poison"],
+    "response": "The Hydra, a nine-headed serpent, grew two heads for each one cut off. Hercules defeated it by burning the stumps and burying the immortal head."
+  },
+  "pegasus": {
+    "keywords": ["pegasus", "winged horse", "bellerophon", "mount olympus", "spring", "muse"],
+    "response": "Pegasus, the winged horse, sprang from Medusa's blood. Bellerophon rode him to defeat the Chimera, and Pegasus later carried Zeus's thunderbolts."
+  },
+  "chimera": {
+    "keywords": ["chimera", "lion", "goat", "snake", "fire", "bellerophon"],
+    "response": "The Chimera, a fire-breathing monster with a lion's head, goat's body, and snake's tail, was defeated by Bellerophon riding Pegasus."
+  },
+  "narcissus": {
+    "keywords": ["narcissus", "mirror", "water", "echo", "narcissism", "beauty"],
+    "response": "Narcissus, a beautiful youth, fell in love with his own reflection in a pool. He wasted away staring at himself, becoming the flower that bears his name."
+  },
+  "echo": {
+    "keywords": ["echo", "nymph", "voice", "repeat", "narcissus", "love"],
+    "response": "Echo, a nymph cursed by Hera, could only repeat others' words. She fell in love with Narcissus but was rejected, leaving only her voice behind."
+  },
+  "pandora": {
+    "keywords": ["pandora", "box", "hope", "curiosity", "zeus", "first woman"],
+    "response": "Pandora, the first woman, was given a box by Zeus. When she opened it, all evils escaped, leaving only hope inside."
+  },
+  "prometheus": {
+    "keywords": ["prometheus", "fire", "titan", "humanity", "eagle", "liver"],
+    "response": "Prometheus, a Titan, stole fire from the gods and gave it to humans. Zeus punished him by chaining him to a rock where an eagle ate his liver daily."
+  },
+  "atlas": {
+    "keywords": ["atlas", "titan", "sky", "shoulders", "hercules", "pillars"],
+    "response": "Atlas, a Titan, was condemned to hold the sky on his shoulders. Hercules temporarily took his burden while Atlas fetched the golden apples."
+  },
+  "sisyphus": {
+    "keywords": ["sisyphus", "boulder", "hill", "eternal", "punishment", "trickster"],
+    "response": "Sisyphus, a cunning king, was punished by rolling a boulder up a hill forever. Each time he neared the top, it rolled back down."
+  },
+  "tantalus": {
+    "keywords": ["tantalus", "food", "water", "reach", "eternal", "hunger"],
+    "response": "Tantalus, punished for serving his son to the gods, stands in water with fruit above, but both recede when he tries to reach them."
+  },
+  "icarus": {
+    "keywords": ["icarus", "wax", "wings", "sun", "fall", "daedalus"],
+    "response": "Icarus, flying with wax wings made by his father Daedalus, ignored warnings and flew too close to the sun, melting his wings and falling to his death."
+  },
+  "daedalus": {
+    "keywords": ["daedalus", "labyrinth", "wings", "icarus", "minos", "inventor"],
+    "response": "Daedalus, the master craftsman, built the labyrinth for the Minotaur and created wax wings to escape Crete with his son Icarus."
+  },
+  "orpheus": {
+    "keywords": ["orpheus", "eurydice", "underworld", "music", "lyre", "look back"],
+    "response": "Orpheus, the greatest musician, descended to the underworld to rescue his wife Eurydice. He almost succeeded but looked back, losing her forever."
+  },
+  "eurydice": {
+    "keywords": ["eurydice", "orpheus", "snake", "underworld", "look back", "wife"],
+    "response": "Eurydice, Orpheus's wife, died from a snake bite. Orpheus almost rescued her from the underworld but lost her when he looked back."
+  },
+  "pygmalion": {
+    "keywords": ["pygmalion", "statue", "galatea", "aphrodite", "love", "sculptor"],
+    "response": "Pygmalion, a sculptor, fell in love with his ivory statue Galatea. Aphrodite brought her to life, and they were married."
+  },
+  "galatea": {
+    "keywords": ["galatea", "statue", "pygmalion", "ivory", "aphrodite", "love"],
+    "response": "Galatea, Pygmalion's ivory statue, was brought to life by Aphrodite. She became Pygmalion's wife and bore him a daughter."
+  },
+  "perseus": {
+    "keywords": ["perseus", "medusa", "mirror", "shield", "andromeda", "winged sandals"],
+    "response": "Perseus, son of Zeus, killed Medusa using a mirrored shield and winged sandals. He later rescued Andromeda from a sea monster."
+  },
+  "andromeda": {
+    "keywords": ["andromeda", "princess", "sea monster", "perseus", "chained", "rescue"],
+    "response": "Andromeda, an Ethiopian princess, was chained to a rock as sacrifice to a sea monster. Perseus rescued and married her."
+  },
+  "jason": {
+    "keywords": ["jason", "golden fleece", "argonauts", "medea", "colchis", "quest"],
+    "response": "Jason led the Argonauts on a quest for the Golden Fleece. With Medea's help, he succeeded but later betrayed her, leading to tragedy."
+  },
+  "medea": {
+    "keywords": ["medea", "jason", "witch", "betrayal", "children", "colchis"],
+    "response": "Medea, a powerful witch and princess of Colchis, helped Jason get the Golden Fleece. When he betrayed her, she killed their children in revenge."
+  },
+  "theseus": {
+    "keywords": ["theseus", "minotaur", "labyrinth", "ariadne", "athens", "hero"],
+    "response": "Theseus, king of Athens, killed the Minotaur in the labyrinth with Ariadne's help. He later abandoned her on Naxos."
+  },
+  "ariadne": {
+    "keywords": ["ariadne", "thread", "labyrinth", "theseus", "dionysus", "naxos"],
+    "response": "Ariadne, daughter of King Minos, gave Theseus a thread to navigate the labyrinth. He abandoned her on Naxos, where Dionysus found her."
+  },
+  "helen": {
+    "keywords": ["helen", "troy", "beautiful", "menelaus", "paris", "trojan war"],
+    "response": "Helen, the most beautiful woman in the world, was abducted by Paris, sparking the Trojan War. She was married to King Menelaus of Sparta."
+  },
+  "paris": {
+    "keywords": ["paris", "helen", "troy", "apple", "judgment", "aphrodite"],
+    "response": "Paris, prince of Troy, was chosen by Zeus to judge which goddess was fairest. He chose Aphrodite and was rewarded with Helen's love."
+  },
+  "agamemnon": {
+    "keywords": ["agamemnon", "mycenae", "trojan war", "clytemnestra", "sacrifice", "king"],
+    "response": "Agamemnon, king of Mycenae, led the Greek forces in the Trojan War. He sacrificed his daughter Iphigenia and was murdered by his wife Clytemnestra."
+  },
+  "clytemnestra": {
+    "keywords": ["clytemnestra", "agamemnon", "murder", "wife", "revenge", "mycenae"],
+    "response": "Clytemnestra, Agamemnon's wife, murdered him upon his return from Troy, seeking revenge for his sacrifice of their daughter Iphigenia."
+  },
+  "orestes": {
+    "keywords": ["orestes", "agamemnon", "clytemnestra", "matricide", "furies", "athena"],
+    "response": "Orestes, son of Agamemnon, avenged his father by killing his mother Clytemnestra. The Furies pursued him until Athena acquitted him."
+  },
+  "electra": {
+    "keywords": ["electra", "orestes", "agamemnon", "clytemnestra", "revenge", "sister"],
+    "response": "Electra, daughter of Agamemnon, helped her brother Orestes avenge their father by killing their mother Clytemnestra."
+  },
+  "oedipus": {
+    "keywords": ["oedipus", "thebes", "sphinx", "mother", "father", "prophecy"],
+    "response": "Oedipus, king of Thebes, solved the Sphinx's riddle but unknowingly fulfilled a prophecy by killing his father and marrying his mother."
+  },
+  "jocasta": {
+    "keywords": ["jocasta", "oedipus", "mother", "wife", "thebes", "suicide"],
+    "response": "Jocasta, queen of Thebes, was Oedipus's mother and wife. When she discovered the truth, she committed suicide by hanging herself."
+  },
+  "antigone": {
+    "keywords": ["antigone", "oedipus", "creon", "burial", "sister", "defiance"],
+    "response": "Antigone, Oedipus's daughter, defied King Creon to bury her brother Polynices. She was sentenced to death but committed suicide first."
+  },
+  "creon": {
+    "keywords": ["creon", "thebes", "antigone", "law", "pride", "king"],
+    "response": "Creon, king of Thebes, forbade the burial of Polynices. His pride and stubbornness led to the deaths of Antigone, his son, and his wife."
+  },
+  "sphinx": {
+    "keywords": ["sphinx", "riddle", "thebes", "oedipus", "woman", "lion"],
+    "response": "The Sphinx, a monster with a woman's head and lion's body, terrorized Thebes with her riddle until Oedipus solved it, causing her to kill herself."
+  },
+  "mount_olympus": {
+    "keywords": ["mount olympus", "olympus", "gods", "home", "zeus", "heaven"],
+    "response": "Mount Olympus, the highest mountain in Greece, is the home of the twelve Olympian gods. It's hidden in clouds and accessible only to the divine."
+  },
+  "underworld": {
+    "keywords": ["underworld", "hades", "dead", "souls", "river styx", "cerberus"],
+    "response": "The Underworld, ruled by Hades, is where souls go after death. It's guarded by Cerberus and divided into regions for different types of souls."
+  },
+  "river_styx": {
+    "keywords": ["river styx", "underworld", "charon", "ferry", "coins", "dead"],
+    "response": "The River Styx, the boundary between the living and dead worlds, is crossed by souls on Charon's ferry, who demands payment in coins."
+  },
+  "elysium": {
+    "keywords": ["elysium", "paradise", "heroes", "underworld", "fields", "blessed"],
+    "response": "Elysium, the paradise of the Underworld, is where heroes and the blessed dead enjoy eternal happiness in beautiful fields."
+  },
+  "tartarus": {
+    "keywords": ["tartarus", "abyss", "punishment", "titans", "underworld", "deepest"],
+    "response": "Tartarus, the deepest part of the Underworld, is where the Titans and other enemies of the gods are imprisoned and punished."
+  }
+}
