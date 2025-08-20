@@ -1,9 +1,19 @@
 require("dotenv").config();
 const OpenAI = require("openai");
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+let openai;
+
+// Initialize OpenAI client only when needed
+function getOpenAIClient() {
+  if (!openai) {
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) {
+      throw new Error('OPENAI_API_KEY environment variable is required');
+    }
+    openai = new OpenAI({ apiKey });
+  }
+  return openai;
+}
 
 async function detect_openAI(history) {
 
@@ -14,7 +24,8 @@ async function detect_openAI(history) {
 
   const prompt = [alert, ...history];
 
-  const res = await openai.chat.completions.create({
+  const openaiClient = getOpenAIClient();
+  const res = await openaiClient.chat.completions.create({
     model: 'gpt-4o-mini',
     messages: prompt, 
     max_tokens: 1000,

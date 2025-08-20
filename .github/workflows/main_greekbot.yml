@@ -25,11 +25,11 @@ jobs:
           node-version: '20.x'
 
       - name: Install backend dependencies
-        working-directory: ./Ambitionz_Az_a_Programah/backend
+        working-directory: ./Ambitionz_Az_a_Programah
         run: npm install --production=false
 
       - name: Verify backend files
-        working-directory: ./Ambitionz_Az_a_Programah/backend
+        working-directory: ./Ambitionz_Az_a_Programah
         run: |
           echo "Checking required backend files..."
           ls -la
@@ -56,15 +56,15 @@ jobs:
       - name: Copy frontend build to backend
         run: |
           if [ -d "./Ambitionz_Az_a_Programah/client/build" ]; then
-            cp -r ./Ambitionz_Az_a_Programah/client/build ./Ambitionz_Az_a_Programah/backend/public
+            cp -r ./Ambitionz_Az_a_Programah/client/build ./Ambitionz_Az_a_Programah/public
           else
             echo "Frontend build failed, creating empty public directory"
-            mkdir -p ./Ambitionz_Az_a_Programah/backend/public
-            echo "<html><body><h1>Frontend build failed</h1><p>Please check the build logs.</p></body></html>" > ./Ambitionz_Az_a_Programah/backend/public/index.html
+            mkdir -p ./Ambitionz_Az_a_Programah/public
+            echo "<html><body><h1>Frontend build failed</h1><p>Please check the build logs.</p></body></html>" > ./Ambitionz_Az_a_Programah/public/index.html
           fi
 
       - name: Test backend application
-        working-directory: ./Ambitionz_Az_a_Programah/backend
+        working-directory: ./Ambitionz_Az_a_Programah
         run: |
           echo "Testing backend application..."
           node -e "
@@ -89,8 +89,8 @@ jobs:
 
       - name: Create deployment package
         run: |
-          cd ./Ambitionz_Az_a_Programah/backend
-          tar -czf ../../deployment-package.tar.gz .
+          cd ./Ambitionz_Az_a_Programah
+          tar -czf ../deployment-package.tar.gz .
 
       - name: Verify deployment package
         run: |
