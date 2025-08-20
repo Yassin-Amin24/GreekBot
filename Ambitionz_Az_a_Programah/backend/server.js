@@ -20,7 +20,7 @@ const io = new Server(server, {
 });
 
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 const filePath = path.join(__dirname, './prompt.json');
 const promptData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
@@ -80,9 +80,9 @@ io.on('connection', async function (socket) {
   })
 });
 
-//app.get('*', (req, res) => {
-//  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-//});
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 
 const PORT = process.env.PORT || 8080;

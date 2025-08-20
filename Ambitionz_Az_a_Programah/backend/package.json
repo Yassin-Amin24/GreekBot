@@ -2,9 +2,11 @@
   "name": "ambitionz_az_a_programah",
   "version": "1.0.0",
   "description": "This repository was created for you as part of a course project. You are required to use this project for any course work and contact  the lecturer in case you encounter any problems with the settings and configuration of the project.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'Build completed'",
+    "postinstall": "echo 'Post install completed'"
   },
   "repository": {
     "type": "git",
