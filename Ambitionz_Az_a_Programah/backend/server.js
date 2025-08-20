@@ -3,7 +3,7 @@ const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
 const path = require('path');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser'); // Not used, commented out
 const fs = require('fs');
 
 const detect = require('./openai_detector.js');
@@ -23,7 +23,13 @@ const io = new Server(server, {
 app.use(express.static(path.join(__dirname, 'public')));
 
 const filePath = path.join(__dirname, './prompt.json');
-const promptData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+let promptData;
+try {
+  promptData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+} catch (error) {
+  console.error('Error reading prompt.json:', error);
+  promptData = [{ role: 'system', content: 'You are a helpful assistant specializing in Greek mythology.' }];
+}
 
 
 io.on('connection', async function (socket) {
@@ -88,5 +94,8 @@ app.get('*', (req, res) => {
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, function () {
   console.log(`Server running at http://localhost:${PORT}`)
+}).on('error', function(err) {
+  console.error('Server failed to start:', err);
+  process.exit(1);
 });
 

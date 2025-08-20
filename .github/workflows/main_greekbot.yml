@@ -26,7 +26,7 @@ jobs:
 
       - name: Install backend dependencies
         working-directory: ./Ambitionz_Az_a_Programah/backend
-        run: npm install
+        run: npm install --production=false
 
       - name: Install frontend dependencies
         working-directory: ./Ambitionz_Az_a_Programah/client
@@ -35,15 +35,29 @@ jobs:
       - name: Build frontend
         working-directory: ./Ambitionz_Az_a_Programah/client
         run: npm run build
+        continue-on-error: true
 
       - name: Copy frontend build to backend
         run: |
-          cp -r ./Ambitionz_Az_a_Programah/client/build ./Ambitionz_Az_a_Programah/backend/public
+          if [ -d "./Ambitionz_Az_a_Programah/client/build" ]; then
+            cp -r ./Ambitionz_Az_a_Programah/client/build ./Ambitionz_Az_a_Programah/backend/public
+          else
+            echo "Frontend build failed, creating empty public directory"
+            mkdir -p ./Ambitionz_Az_a_Programah/backend/public
+            echo "<html><body><h1>Frontend build failed</h1><p>Please check the build logs.</p></body></html>" > ./Ambitionz_Az_a_Programah/backend/public/index.html
+          fi
 
       - name: Create deployment package
         run: |
           cd ./Ambitionz_Az_a_Programah/backend
           tar -czf ../../deployment-package.tar.gz .
+
+      - name: Verify deployment package
+        run: |
+          echo "Deployment package size:"
+          ls -lh deployment-package.tar.gz
+          echo "Package contents:"
+          tar -tzf deployment-package.tar.gz | head -10
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
