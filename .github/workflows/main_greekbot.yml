@@ -28,6 +28,22 @@ jobs:
         working-directory: ./Ambitionz_Az_a_Programah/backend
         run: npm install --production=false
 
+      - name: Verify backend files
+        working-directory: ./Ambitionz_Az_a_Programah/backend
+        run: |
+          echo "Checking required backend files..."
+          ls -la
+          echo "Checking if server.js exists..."
+          test -f server.js && echo "✓ server.js found" || echo "✗ server.js missing"
+          echo "Checking if cosmosDB.js exists..."
+          test -f cosmosDB.js && echo "✓ cosmosDB.js found" || echo "✗ cosmosDB.js missing"
+          echo "Checking if openai_detector.js exists..."
+          test -f openai_detector.js && echo "✓ openai_detector.js found" || echo "✗ openai_detector.js missing"
+          echo "Checking if prompt.json exists..."
+          test -f prompt.json && echo "✓ prompt.json found" || echo "✗ prompt.json missing"
+          echo "Checking if startup.js exists..."
+          test -f startup.js && echo "✓ startup.js found" || echo "✗ startup.js missing"
+
       - name: Install frontend dependencies
         working-directory: ./Ambitionz_Az_a_Programah/client
         run: npm install
@@ -46,6 +62,30 @@ jobs:
             mkdir -p ./Ambitionz_Az_a_Programah/backend/public
             echo "<html><body><h1>Frontend build failed</h1><p>Please check the build logs.</p></body></html>" > ./Ambitionz_Az_a_Programah/backend/public/index.html
           fi
+
+      - name: Test backend application
+        working-directory: ./Ambitionz_Az_a_Programah/backend
+        run: |
+          echo "Testing backend application..."
+          node -e "
+            try {
+              require('./server.js');
+              console.log('✓ Backend application loads successfully');
+            } catch (error) {
+              console.error('✗ Backend application failed to load:', error.message);
+              process.exit(1);
+            }
+          "
+          echo "Testing startup script..."
+          node -e "
+            try {
+              require('./startup.js');
+              console.log('✓ Startup script loads successfully');
+            } catch (error) {
+              console.error('✗ Startup script failed to load:', error.message);
+              process.exit(1);
+            }
+          "
 
       - name: Create deployment package
         run: |

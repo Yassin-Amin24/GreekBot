@@ -6,7 +6,7 @@ const path = require('path');
 // const bodyParser = require('body-parser'); // Not used, commented out
 const fs = require('fs');
 
-const detect = require('./openai_detector.js');
+const detect_openAI = require('./openai_detector.js');
 const { post_data, get_data } = require('./cosmosDB.js');
 
 const app = express();
@@ -55,7 +55,7 @@ io.on('connection', async function (socket) {
     if (!msg) return;
     socket.memory.push({ role: 'user',content: msg.toString() });
 
-    const reply = await detect(socket.memory);
+    const reply = await detect_openAI(socket.memory);
 
     if (reply.trim().toUpperCase().startsWith("*FALLBACK*")) {
       fallbackCount++;
